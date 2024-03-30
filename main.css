@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+header .container {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+header {
+    color: aliceblue;
+    background-color:steelblue;
+    padding: 0.5em;
+    margin-bottom: 2.5em;
+    
+}
+
+
+
+h2 {color: steelblue;
+}
+
+.dividido {
+    display: flex;
+
+}
+
+.dividido img {
+    width: 30em;
+}
+
+.sobre-a-loja {
+    margin-left: 2em;
+    
+}
+
+.linha-grossa {
+    border: 0.1em solid steelblue;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    padding: 1em;
+}
+
+.central {
+    margin-bottom: 4em;
+}
+
+.container ul {
+    display: flex;
+}
+
+
+.produtos li {
+    list-style:none;
+    padding: 0.5em;
+    width: 24%;
+    
+    
+}
+
+
+.produtos button {
+    border-radius: 0.3em;
+    padding: 0.5em;
+    
+    background-color:rgb(50, 72, 172);
+    color: #fff;
+    font-weight: bold;
+    max-width: 100%;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    header .container {
+        max-width: 90%;
+    }
+
+    
+
+    .produtos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        max-width: 400px;
+    }
+
+    .produtos li {
+        width: auto;
+        margin: 0 100px;
+    }
+
+
+    
+    } 
+
+
+@media screen and (max-width: 640px) {
+    header .container {
+        max-width: 90%;
+    }
+
+    .dividido img {
+        max-width: 100%;
+        padding: 2em;
+        margin-left: 2.5em;
+        width: 38em;
+    }
+
+    .sobre-a-loja {
+        padding: 2em;
+    }
+    
+    .produtos {
+        padding: 2em;
+    }
+
+    .produtos ul {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        
+    }
+
+    .produtos li {
+        width: auto;
+        margin: 20px 0;
+    }
+
+    .produtos img {
+        width:100%;
+    }
+
+        .dividido {
+            display: block;
+        }
+
+
+}
